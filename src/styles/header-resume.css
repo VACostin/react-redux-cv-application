@@ -1,0 +1,19 @@
+#header-resume {
+  height: 34.4mm;
+  width: 100%;
+  color: rgb(238, 238, 238);
+  background-color: rgb(20, 62, 114);
+  box-sizing: border-box;
+  padding: 25px;
+}
+
+#header-resume > p:first-child {
+  width: auto;
+  font-weight: bold;
+  font-size: 3em;
+}
+
+#header-resume > p:last-child {
+  margin-top: 10px;
+  font-size: 1.5em;
+}

@@ -1,0 +1,94 @@
+@font-face {
+  font-family: Nunito-Bold;
+  src: url(Nunito-Bold.ttf);
+}
+
+@media only screen {
+  #form {
+    height: auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 750px;
+    background-color: rgb(238, 238, 238);
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 25px 25px 25px 20px;
+  }
+
+  legend {
+    font-family: Nunito-Bold !important;
+    font-size: 1.2em !important;
+    padding-top: 10px !important;
+    margin-bottom: 10px;
+    padding-left: 8px !important;
+  }
+}
+input:nth-child(2) {
+  margin-top: 20px;
+}
+
+input:last-child {
+  margin-bottom: 40px;
+}
+
+fieldset > input {
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 34px;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+
+#description-form {
+  font-family: Nunito;
+  margin-bottom: 10px;
+  width: 100%;
+  border: none;
+  border-radius: 5px;
+  height: 80px;
+  padding-left: 10px;
+  font-size: 1.1em;
+}
+
+fieldset > div > button {
+  font-weight: bold;
+  font-size: 1em;
+  color: rgb(238, 238, 238);
+  background-color: rgb(51, 51, 51);
+  border-radius: 5px;
+  width: 101.6%;
+  height: 40px;
+}
+
+fieldset > div {
+  margin-bottom: 10px;
+}
+
+fieldset > div:last-child {
+  margin-bottom: 30px;
+}
+
+fieldset > div > button:hover {
+  background-color: black;
+}
+
+@media only screen and (min-width: 1600px) {
+  #form {
+    margin-left: 60px;
+    width: max(550px, 100vw - 1050px);
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  #form {
+    width: 750px;
+  }
+}
+
+@media only screen and (min-width: 1820px) {
+  #form {
+    margin-left: max(60px, 6.25vw - 53.75px);
+  }
+}

@@ -1,6 +1,12 @@
 {
   "root": true,
-  "settings": {},
+  "settings": {
+    "import/resolver": {
+      "webpack": {
+        "extensions": [".js", ".jsx"]
+      }
+    }
+  },
   "env": {
     "browser": true, // Enables browser globals like window and document
     "amd": true, // Enables require() and define() as global variables as per the amd spec.
@@ -15,12 +21,7 @@
       "jsx": true // Enable JSX since we're using React
     }
   },
-  "extends": [
-    "airbnb",
-    "prettier",
-    "plugin:testing-library/react",
-    "plugin:jest/all"
-  ],
+  "extends": ["airbnb", "prettier", "plugin:testing-library/react", "plugin:jest/all"],
   "plugins": ["prettier", "react", "react-hooks", "testing-library", "jest"],
   "rules": {
     "prettier/prettier": ["warn", {}, { "usePrettierrc": true }], // Use .prettierrc file as source
@@ -29,7 +30,8 @@
     "no-unused-vars": 1,
     "import/no-unresolved": 2,
     "no-undefined": 2,
-    "react/jsx-uses-vars": 2
+    "react/jsx-uses-vars": 2,
     // add more rules here...
+    "no-param-reassign": ["error", { "props": false }]
   }
 }

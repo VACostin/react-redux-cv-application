@@ -1,0 +1,15 @@
+@font-face {
+  font-family: Nunito;
+  src: url(Nunito-Regular.ttf);
+}
+
+#footer {
+  font-family: Nunito;
+  background-color: rgb(51, 51, 51);
+  color: rgb(238, 238, 238);
+  width: 100%;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

@@ -1,16 +1,24 @@
 import React from "react";
-import PersonalInformation from "./form-components/personal-information";
-import Experience from "./form-components/experience";
-import Education from "./form-components/education";
-import ColoredButtons from "./form-components/colored-buttons";
+import PropTypes from "prop-types";
+import {
+  PersonalInformation,
+  ExperienceList,
+  EducationList,
+  ColoredButtons
+} from "./form-components";
+import "Styles/form.css";
 
-export default function Form() {
+export default function Form({ handlePrint }) {
   return (
-    <form>
+    <form id="form">
       <PersonalInformation />
-      <Experience />
-      <Education />
-      <ColoredButtons />
+      <ExperienceList />
+      <EducationList />
+      <ColoredButtons handlePrint={handlePrint} />
     </form>
   );
 }
+
+Form.propTypes = {
+  handlePrint: PropTypes.func.isRequired
+};

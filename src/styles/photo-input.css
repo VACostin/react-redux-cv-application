@@ -1,0 +1,27 @@
+#photoInput {
+  display: flex;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  background-color: white;
+  border-radius: 5px;
+  height: 36px;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  font-size: 1.1em;
+  color: fieldtext;
+}
+
+#photoInput [type="file"] {
+  cursor: inherit;
+  display: block;
+  font-size: 999px;
+  filter: alpha(opacity=0);
+  width: 100%;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: right;
+  top: 0;
+}

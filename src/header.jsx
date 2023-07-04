@@ -1,10 +1,10 @@
 import React from "react";
-import "./styles/header.css";
+import "Styles/header.css";
 
 export default function Header() {
   return (
     <div id="header">
-      <p>CV CREATOR</p>
+      <p>ONE PAGE RESUME</p>
     </div>
   );
 }

@@ -8,7 +8,7 @@ const getInitialStatePhoto = () => {
 };
 
 const getSamplePhoto = () => {
-  const label = "description";
+  const label = "photo";
   const sample = base64ImageSample;
   const obj = getSamples([label], [sample]);
   return { ...obj[label] };
